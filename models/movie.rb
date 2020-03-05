@@ -43,4 +43,9 @@ class Movie
     SqlRunner.run(sql)
   end
 
+  def self.all
+    sql = "SELECT * FROM movies"
+    SqlRunner.run(sql)
+  end
+
 end

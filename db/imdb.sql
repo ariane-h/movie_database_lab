@@ -17,5 +17,6 @@ CREATE TABLE movies(
 CREATE TABLE castings(
   id SERIAL PRIMARY KEY,
   movie_id INT REFERENCES movies(id),
-  star_id INT REFERENCES stars(id)
+  star_id INT REFERENCES stars(id),
+  fee INT
 );
